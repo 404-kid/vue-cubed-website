@@ -1,15 +1,14 @@
 <template>
 <v-container>
-  <p class="headline">To install Vue Cubed, first you must have a Vue project created, if you do not know how todo that <a href="https://cli.vuejs.org/" class="primary--text">this</a> will help you.</p>
-  <p class="headline">While in the project folder, use the following command to install the plugin to the project.</p>
-  <kbd class="headline width-100">npm i vue-cubed --save</kbd>
-  <p class="headline">Once the package has installed itself, import it and tell Vue to use it. Do this by navagating to <code>(project name)/src/main.js</code> and ensuring you have the following code.</p>
-  <kbd class="headline width-100">
-    import Vue from 'vue'
-    import VueCubed from 'vue-cubed'
-
-    Vue.use(VueCubed)
+  <p class="headline">Creating a scene is very simple all that it requires is use of the <kbd class="headline">&lt;VueScene/&gt;</kbd> component.</p>
+  <p class="headline">In a .vue component file simply put <kbd class="headline">&lt;VueScene/&gt;</kbd> in the template section like so.</p>
+  <kbd class="headline width-100"> 
+    &lt;template&gt;
+      &lt;VueScene/&gt;
+    &lt;/template&gt;
   </kbd>
+  <p class="headline">It should me noted that the <kbd class="headline">&lt;VueScene/&gt;</kbd> component creates a render in a window of the size thats passed in via css for instance <kbd class="headline">&lt;VueScene style="height:100px;width:100px"/&gt;</kbd> creates a render window of 100px by 100px.</p>
+  <code class="headline notice">NOTICE: Do not attempt to have two &lt;VueScene/&gt; components loaded at the same time. They would share varibles and overwrite eachother.</code>
 </v-container>
 </template>
 
@@ -22,10 +21,6 @@
 <style scoped>
 a{
   text-decoration: underline;
-}
-.width-100{
-  width: 100%;
-  text-align: left;
 }
 p{
   margin-top: 2rem !important;

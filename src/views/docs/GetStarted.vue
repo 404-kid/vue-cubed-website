@@ -10,6 +10,7 @@
 
     Vue.use(VueCubed)
   </kbd>
+  <p class="headline">When properly done your project should show the message <code>THREE.WebGLRenderer</code> in the development console</p>
 </v-container>
 </template>
 
