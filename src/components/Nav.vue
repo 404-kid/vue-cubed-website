@@ -4,7 +4,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-xs-only">
       <v-btn flat><router-link to="/documentation/">Docs</router-link></v-btn>
-      <v-btn flat><router-link to="/infomation">Info</router-link></v-btn>
+      <!-- <v-btn flat><router-link to="/infomation">Info</router-link></v-btn> -->
       <v-btn flat><a href="https://github.com/404-kid/vue-cubed">Code</a></v-btn>
     </v-toolbar-items>
     <v-menu offset-y>
@@ -15,7 +15,7 @@
       <v-container bg>
         <v-layout column>
           <v-btn flat><router-link to="/documentation">Docs</router-link></v-btn>
-          <v-btn flat><router-link to="/information">Info</router-link></v-btn>
+          <!-- <v-btn flat><router-link to="/information">Info</router-link></v-btn> -->
           <v-btn flat><a href="https://github.com/404-kid/vue-cubed">Code</a></v-btn>
         </v-layout>
       </v-container>
